@@ -1,0 +1,749 @@
+fileFormatVersion: 2
+guid: 19a5a8dd9f6eaba49980048610a6e8e3
+ModelImporter:
+  serializedVersion: 21300
+  internalIDToNameTable:
+  - first:
+      1: 100000
+    second: Chest
+  - first:
+      1: 100002
+    second: Head
+  - first:
+      1: 100004
+    second: //RootNode
+  - first:
+      1: 100006
+    second: Jaw01
+  - first:
+      1: 100008
+    second: Jaw02
+  - first:
+      1: 100010
+    second: Jaw03
+  - first:
+      1: 100012
+    second: L_feet
+  - first:
+      1: 100014
+    second: L_Lowerleg01
+  - first:
+      1: 100016
+    second: L_LowerLeg02
+  - first:
+      1: 100018
+    second: L_Shoulder01
+  - first:
+      1: 100020
+    second: L_Shoulder02
+  - first:
+      1: 100022
+    second: L_Toe_Index01
+  - first:
+      1: 100024
+    second: L_Toe_Index02
+  - first:
+      1: 100026
+    second: L_Toe_Middle01
+  - first:
+      1: 100028
+    second: L_Toe_Middle02
+  - first:
+      1: 100030
+    second: L_Toe_Pinky01
+  - first:
+      1: 100032
+    second: L_Toe_Pinky02
+  - first:
+      1: 100034
+    second: L_UpperLeg
+  - first:
+      1: 100036
+    second: Neck01
+  - first:
+      1: 100038
+    second: Neck02
+  - first:
+      1: 100040
+    second: NightMareDragon
+  - first:
+      1: 100042
+    second: R_armHorn
+  - first:
+      1: 100044
+    second: R_armHorn 1
+  - first:
+      1: 100046
+    second: R_feet
+  - first:
+      1: 100048
+    second: R_Hand
+  - first:
+      1: 100050
+    second: R_Hand 1
+  - first:
+      1: 100052
+    second: R_Index01
+  - first:
+      1: 100054
+    second: R_Index01 1
+  - first:
+      1: 100056
+    second: R_Index02
+  - first:
+      1: 100058
+    second: R_Index02 1
+  - first:
+      1: 100060
+    second: R_Index03
+  - first:
+      1: 100062
+    second: R_Index03 1
+  - first:
+      1: 100064
+    second: R_Middle01
+  - first:
+      1: 100066
+    second: R_Middle01 1
+  - first:
+      1: 100068
+    second: R_Middle02
+  - first:
+      1: 100070
+    second: R_Middle02 1
+  - first:
+      1: 100072
+    second: R_Middle03
+  - first:
+      1: 100074
+    second: R_Middle03 1
+  - first:
+      1: 100076
+    second: R_Pinky01
+  - first:
+      1: 100078
+    second: R_Pinky01 1
+  - first:
+      1: 100080
+    second: R_Pinky02
+  - first:
+      1: 100082
+    second: R_Pinky02 1
+  - first:
+      1: 100084
+    second: R_Pinky03
+  - first:
+      1: 100086
+    second: R_Pinky03 1
+  - first:
+      1: 100088
+    second: R_RowerArm
+  - first:
+      1: 100090
+    second: R_RowerArm 1
+  - first:
+      1: 100092
+    second: R_Rowerleg01
+  - first:
+      1: 100094
+    second: R_RowerReg02
+  - first:
+      1: 100096
+    second: R_Shoulder01
+  - first:
+      1: 100098
+    second: R_Shoulder02
+  - first:
+      1: 100100
+    second: R_Toe_Index01
+  - first:
+      1: 100102
+    second: R_Toe_Index02
+  - first:
+      1: 100104
+    second: R_Toe_Middle01
+  - first:
+      1: 100106
+    second: R_Toe_Middle02
+  - first:
+      1: 100108
+    second: R_Toe_Pinky01
+  - first:
+      1: 100110
+    second: R_Toe_Pinky02
+  - first:
+      1: 100112
+    second: R_UpperArm
+  - first:
+      1: 100114
+    second: R_UpperArm1
+  - first:
+      1: 100116
+    second: R_UpperReg
+  - first:
+      1: 100118
+    second: R_Wrist
+  - first:
+      1: 100120
+    second: R_Wrist 1
+  - first:
+      1: 100122
+    second: Root
+  - first:
+      1: 100124
+    second: Spine01
+  - first:
+      1: 100126
+    second: Spine02
+  - first:
+      1: 100128
+    second: Tail01
+  - first:
+      1: 100130
+    second: Tail02
+  - first:
+      1: 100132
+    second: Tail03
+  - first:
+      1: 100134
+    second: Tail04
+  - first:
+      1: 100136
+    second: Tongue01
+  - first:
+      1: 100138
+    second: Tongue02
+  - first:
+      1: 100140
+    second: Tongue03
+  - first:
+      1: 100142
+    second: Tongue04
+  - first:
+      1: 100144
+    second: UpperHead01
+  - first:
+      1: 100146
+    second: UpperHead02
+  - first:
+      4: 400000
+    second: Chest
+  - first:
+      4: 400002
+    second: Head
+  - first:
+      4: 400004
+    second: //RootNode
+  - first:
+      4: 400006
+    second: Jaw01
+  - first:
+      4: 400008
+    second: Jaw02
+  - first:
+      4: 400010
+    second: Jaw03
+  - first:
+      4: 400012
+    second: L_feet
+  - first:
+      4: 400014
+    second: L_Lowerleg01
+  - first:
+      4: 400016
+    second: L_LowerLeg02
+  - first:
+      4: 400018
+    second: L_Shoulder01
+  - first:
+      4: 400020
+    second: L_Shoulder02
+  - first:
+      4: 400022
+    second: L_Toe_Index01
+  - first:
+      4: 400024
+    second: L_Toe_Index02
+  - first:
+      4: 400026
+    second: L_Toe_Middle01
+  - first:
+      4: 400028
+    second: L_Toe_Middle02
+  - first:
+      4: 400030
+    second: L_Toe_Pinky01
+  - first:
+      4: 400032
+    second: L_Toe_Pinky02
+  - first:
+      4: 400034
+    second: L_UpperLeg
+  - first:
+      4: 400036
+    second: Neck01
+  - first:
+      4: 400038
+    second: Neck02
+  - first:
+      4: 400040
+    second: NightMareDragon
+  - first:
+      4: 400042
+    second: R_armHorn
+  - first:
+      4: 400044
+    second: R_armHorn 1
+  - first:
+      4: 400046
+    second: R_feet
+  - first:
+      4: 400048
+    second: R_Hand
+  - first:
+      4: 400050
+    second: R_Hand 1
+  - first:
+      4: 400052
+    second: R_Index01
+  - first:
+      4: 400054
+    second: R_Index01 1
+  - first:
+      4: 400056
+    second: R_Index02
+  - first:
+      4: 400058
+    second: R_Index02 1
+  - first:
+      4: 400060
+    second: R_Index03
+  - first:
+      4: 400062
+    second: R_Index03 1
+  - first:
+      4: 400064
+    second: R_Middle01
+  - first:
+      4: 400066
+    second: R_Middle01 1
+  - first:
+      4: 400068
+    second: R_Middle02
+  - first:
+      4: 400070
+    second: R_Middle02 1
+  - first:
+      4: 400072
+    second: R_Middle03
+  - first:
+      4: 400074
+    second: R_Middle03 1
+  - first:
+      4: 400076
+    second: R_Pinky01
+  - first:
+      4: 400078
+    second: R_Pinky01 1
+  - first:
+      4: 400080
+    second: R_Pinky02
+  - first:
+      4: 400082
+    second: R_Pinky02 1
+  - first:
+      4: 400084
+    second: R_Pinky03
+  - first:
+      4: 400086
+    second: R_Pinky03 1
+  - first:
+      4: 400088
+    second: R_RowerArm
+  - first:
+      4: 400090
+    second: R_RowerArm 1
+  - first:
+      4: 400092
+    second: R_Rowerleg01
+  - first:
+      4: 400094
+    second: R_RowerReg02
+  - first:
+      4: 400096
+    second: R_Shoulder01
+  - first:
+      4: 400098
+    second: R_Shoulder02
+  - first:
+      4: 400100
+    second: R_Toe_Index01
+  - first:
+      4: 400102
+    second: R_Toe_Index02
+  - first:
+      4: 400104
+    second: R_Toe_Middle01
+  - first:
+      4: 400106
+    second: R_Toe_Middle02
+  - first:
+      4: 400108
+    second: R_Toe_Pinky01
+  - first:
+      4: 400110
+    second: R_Toe_Pinky02
+  - first:
+      4: 400112
+    second: R_UpperArm
+  - first:
+      4: 400114
+    second: R_UpperArm1
+  - first:
+      4: 400116
+    second: R_UpperReg
+  - first:
+      4: 400118
+    second: R_Wrist
+  - first:
+      4: 400120
+    second: R_Wrist 1
+  - first:
+      4: 400122
+    second: Root
+  - first:
+      4: 400124
+    second: Spine01
+  - first:
+      4: 400126
+    second: Spine02
+  - first:
+      4: 400128
+    second: Tail01
+  - first:
+      4: 400130
+    second: Tail02
+  - first:
+      4: 400132
+    second: Tail03
+  - first:
+      4: 400134
+    second: Tail04
+  - first:
+      4: 400136
+    second: Tongue01
+  - first:
+      4: 400138
+    second: Tongue02
+  - first:
+      4: 400140
+    second: Tongue03
+  - first:
+      4: 400142
+    second: Tongue04
+  - first:
+      4: 400144
+    second: UpperHead01
+  - first:
+      4: 400146
+    second: UpperHead02
+  - first:
+      43: 4300000
+    second: NightMareDragon
+  - first:
+      74: 7400000
+    second: Horn Attack
+  - first:
+      95: 9500000
+    second: //RootNode
+  - first:
+      137: 13700000
+    second: NightMareDragon
+  externalObjects: {}
+  materials:
+    materialImportMode: 0
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 0
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    removeConstantScaleCurves: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 3
+    animationRotationError: 0.06
+    animationPositionError: 0.17
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Horn Attack
+      takeName: Take 001
+      internalID: 0
+      firstFrame: 0
+      lastFrame: 65
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: NightMareDragon
+        weight: 1
+      - path: Root
+        weight: 1
+      - path: Root/L_UpperLeg
+        weight: 1
+      - path: Root/L_UpperLeg/L_Lowerleg01
+        weight: 1
+      - path: Root/L_UpperLeg/L_Lowerleg01/L_LowerLeg02
+        weight: 1
+      - path: Root/L_UpperLeg/L_Lowerleg01/L_LowerLeg02/L_feet
+        weight: 1
+      - path: Root/L_UpperLeg/L_Lowerleg01/L_LowerLeg02/L_feet/L_Toe_Index01
+        weight: 1
+      - path: Root/L_UpperLeg/L_Lowerleg01/L_LowerLeg02/L_feet/L_Toe_Index01/L_Toe_Index02
+        weight: 1
+      - path: Root/L_UpperLeg/L_Lowerleg01/L_LowerLeg02/L_feet/L_Toe_Middle01
+        weight: 1
+      - path: Root/L_UpperLeg/L_Lowerleg01/L_LowerLeg02/L_feet/L_Toe_Middle01/L_Toe_Middle02
+        weight: 1
+      - path: Root/L_UpperLeg/L_Lowerleg01/L_LowerLeg02/L_feet/L_Toe_Pinky01
+        weight: 1
+      - path: Root/L_UpperLeg/L_Lowerleg01/L_LowerLeg02/L_feet/L_Toe_Pinky01/L_Toe_Pinky02
+        weight: 1
+      - path: Root/R_UpperReg
+        weight: 1
+      - path: Root/R_UpperReg/R_Rowerleg01
+        weight: 1
+      - path: Root/R_UpperReg/R_Rowerleg01/R_RowerReg02
+        weight: 1
+      - path: Root/R_UpperReg/R_Rowerleg01/R_RowerReg02/R_feet
+        weight: 1
+      - path: Root/R_UpperReg/R_Rowerleg01/R_RowerReg02/R_feet/R_Toe_Index01
+        weight: 1
+      - path: Root/R_UpperReg/R_Rowerleg01/R_RowerReg02/R_feet/R_Toe_Index01/R_Toe_Index02
+        weight: 1
+      - path: Root/R_UpperReg/R_Rowerleg01/R_RowerReg02/R_feet/R_Toe_Middle01
+        weight: 1
+      - path: Root/R_UpperReg/R_Rowerleg01/R_RowerReg02/R_feet/R_Toe_Middle01/R_Toe_Middle02
+        weight: 1
+      - path: Root/R_UpperReg/R_Rowerleg01/R_RowerReg02/R_feet/R_Toe_Pinky01
+        weight: 1
+      - path: Root/R_UpperReg/R_Rowerleg01/R_RowerReg02/R_feet/R_Toe_Pinky01/R_Toe_Pinky02
+        weight: 1
+      - path: Root/Spine01
+        weight: 1
+      - path: Root/Spine01/Spine02
+        weight: 1
+      - path: Root/Spine01/Spine02/Chest
+        weight: 1
+      - path: Root/Spine01/Spine02/Chest/L_Shoulder01
+        weight: 1
+      - path: Root/Spine01/Spine02/Chest/L_Shoulder01/L_Shoulder02
+        weight: 1
+      - path: Root/Spine01/Spine02/Chest/Neck01
+        weight: 1
+      - path: Root/Spine01/Spine02/Chest/Neck01/Neck02
+        weight: 1
+      - path: Root/Spine01/Spine02/Chest/Neck01/Neck02/Head
+        weight: 1
+      - path: Root/Spine01/Spine02/Chest/Neck01/Neck02/Head/Jaw01
+        weight: 1
+      - path: Root/Spine01/Spine02/Chest/Neck01/Neck02/Head/Jaw01/Jaw02
+        weight: 1
+      - path: Root/Spine01/Spine02/Chest/Neck01/Neck02/Head/Jaw01/Jaw02/Jaw03
+        weight: 1
+      - path: Root/Spine01/Spine02/Chest/Neck01/Neck02/Head/Tongue01
+        weight: 1
+      - path: Root/Spine01/Spine02/Chest/Neck01/Neck02/Head/Tongue01/Tongue02
+        weight: 1
+      - path: Root/Spine01/Spine02/Chest/Neck01/Neck02/Head/Tongue01/Tongue02/Tongue03
+        weight: 1
+      - path: Root/Spine01/Spine02/Chest/Neck01/Neck02/Head/Tongue01/Tongue02/Tongue03/Tongue04
+        weight: 1
+      - path: Root/Spine01/Spine02/Chest/Neck01/Neck02/Head/UpperHead01
+        weight: 1
+      - path: Root/Spine01/Spine02/Chest/Neck01/Neck02/Head/UpperHead01/UpperHead02
+        weight: 1
+      - path: Root/Spine01/Spine02/Chest/R_Shoulder01
+        weight: 1
+      - path: Root/Spine01/Spine02/Chest/R_Shoulder01/R_Shoulder02
+        weight: 1
+      - path: Root/Spine01/Spine02/Chest/R_UpperArm
+        weight: 1
+      - path: Root/Spine01/Spine02/Chest/R_UpperArm/R_RowerArm
+        weight: 1
+      - path: Root/Spine01/Spine02/Chest/R_UpperArm/R_RowerArm/R_armHorn
+        weight: 1
+      - path: Root/Spine01/Spine02/Chest/R_UpperArm/R_RowerArm/R_Wrist
+        weight: 1
+      - path: Root/Spine01/Spine02/Chest/R_UpperArm/R_RowerArm/R_Wrist/R_Hand
+        weight: 1
+      - path: Root/Spine01/Spine02/Chest/R_UpperArm/R_RowerArm/R_Wrist/R_Hand/R_Index01
+        weight: 1
+      - path: Root/Spine01/Spine02/Chest/R_UpperArm/R_RowerArm/R_Wrist/R_Hand/R_Index01/R_Index02
+        weight: 1
+      - path: Root/Spine01/Spine02/Chest/R_UpperArm/R_RowerArm/R_Wrist/R_Hand/R_Index01/R_Index02/R_Index03
+        weight: 1
+      - path: Root/Spine01/Spine02/Chest/R_UpperArm/R_RowerArm/R_Wrist/R_Hand/R_Middle01
+        weight: 1
+      - path: Root/Spine01/Spine02/Chest/R_UpperArm/R_RowerArm/R_Wrist/R_Hand/R_Middle01/R_Middle02
+        weight: 1
+      - path: Root/Spine01/Spine02/Chest/R_UpperArm/R_RowerArm/R_Wrist/R_Hand/R_Middle01/R_Middle02/R_Middle03
+        weight: 1
+      - path: Root/Spine01/Spine02/Chest/R_UpperArm/R_RowerArm/R_Wrist/R_Hand/R_Pinky01
+        weight: 1
+      - path: Root/Spine01/Spine02/Chest/R_UpperArm/R_RowerArm/R_Wrist/R_Hand/R_Pinky01/R_Pinky02
+        weight: 1
+      - path: Root/Spine01/Spine02/Chest/R_UpperArm/R_RowerArm/R_Wrist/R_Hand/R_Pinky01/R_Pinky02/R_Pinky03
+        weight: 1
+      - path: Root/Spine01/Spine02/Chest/R_UpperArm1
+        weight: 1
+      - path: Root/Spine01/Spine02/Chest/R_UpperArm1/R_RowerArm 1
+        weight: 1
+      - path: Root/Spine01/Spine02/Chest/R_UpperArm1/R_RowerArm 1/R_armHorn 1
+        weight: 1
+      - path: Root/Spine01/Spine02/Chest/R_UpperArm1/R_RowerArm 1/R_Wrist 1
+        weight: 1
+      - path: Root/Spine01/Spine02/Chest/R_UpperArm1/R_RowerArm 1/R_Wrist 1/R_Hand
+          1
+        weight: 1
+      - path: Root/Spine01/Spine02/Chest/R_UpperArm1/R_RowerArm 1/R_Wrist 1/R_Hand
+          1/R_Index01 1
+        weight: 1
+      - path: Root/Spine01/Spine02/Chest/R_UpperArm1/R_RowerArm 1/R_Wrist 1/R_Hand
+          1/R_Index01 1/R_Index02 1
+        weight: 1
+      - path: Root/Spine01/Spine02/Chest/R_UpperArm1/R_RowerArm 1/R_Wrist 1/R_Hand
+          1/R_Index01 1/R_Index02 1/R_Index03 1
+        weight: 1
+      - path: Root/Spine01/Spine02/Chest/R_UpperArm1/R_RowerArm 1/R_Wrist 1/R_Hand
+          1/R_Middle01 1
+        weight: 1
+      - path: Root/Spine01/Spine02/Chest/R_UpperArm1/R_RowerArm 1/R_Wrist 1/R_Hand
+          1/R_Middle01 1/R_Middle02 1
+        weight: 1
+      - path: Root/Spine01/Spine02/Chest/R_UpperArm1/R_RowerArm 1/R_Wrist 1/R_Hand
+          1/R_Middle01 1/R_Middle02 1/R_Middle03 1
+        weight: 1
+      - path: Root/Spine01/Spine02/Chest/R_UpperArm1/R_RowerArm 1/R_Wrist 1/R_Hand
+          1/R_Pinky01 1
+        weight: 1
+      - path: Root/Spine01/Spine02/Chest/R_UpperArm1/R_RowerArm 1/R_Wrist 1/R_Hand
+          1/R_Pinky01 1/R_Pinky02 1
+        weight: 1
+      - path: Root/Spine01/Spine02/Chest/R_UpperArm1/R_RowerArm 1/R_Wrist 1/R_Hand
+          1/R_Pinky01 1/R_Pinky02 1/R_Pinky03 1
+        weight: 1
+      - path: Root/Tail01
+        weight: 1
+      - path: Root/Tail01/Tail02
+        weight: 1
+      - path: Root/Tail01/Tail02/Tail03
+        weight: 1
+      - path: Root/Tail01/Tail02/Tail03/Tail04
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importVisibility: 0
+    importBlendShapes: 1
+    importCameras: 0
+    importLights: 0
+    nodeNameCollisionStrategy: 0
+    fileIdsGeneration: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    bakeAxisConversion: 0
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    optimizeBones: 1
+    meshOptimizationFlags: -1
+    indexFormat: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 0
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 1
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 1
+  humanDescription:
+    serializedVersion: 3
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 1
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 2
+  humanoidOversampling: 1
+  avatarSetup: 1
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 0
+  remapMaterialsIfMaterialImportModeIsNone: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
