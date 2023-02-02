@@ -25,7 +25,7 @@ public class CombatManager : MonoBehaviour
     {
         GetDistance();
         GetDirection();
-        CheckDragonAnimation();
+        //CheckDragonAnimation();
     }
 
     float GetDistance()
@@ -38,13 +38,13 @@ public class CombatManager : MonoBehaviour
         Vector3 direction = (Player.transform.position - Dragon.transform.position).normalized;
         return direction;
     }
-    float CheckDragonAnimation()
-    {
-        if (DragonAnim.GetCurrentAnimatorStateInfo(0).IsName("AttackState"))
-        {
+    //float CheckDragonAnimation()
+    //{
+     //   if (DragonAnim.GetCurrentAnimatorStateInfo(0).IsName("AttackState"))
+     //   {
 
-        }
-    }
+    //    }
+   // }
     void DragonAttack()
     {
         //if (CheckDragonAnimation() == 0 && GetDistance() == 3f && (GetDirection.>=(0,0,0) && GetDirection.y<=0.9f)
