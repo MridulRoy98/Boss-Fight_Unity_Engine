@@ -89,26 +89,34 @@ public class PlayerMovement : MonoBehaviour
         transform.rotation = Quaternion.Lerp(CurrentRotation, TargetRotation, RotationSpeed *Time.deltaTime);
 
     }
-    void PlayerAttack()
+    public bool PlayerAttack()
     {
         if (Input.GetMouseButtonDown(0))
         {
             //Pressing the left mouse button will trigger the attack animation
             MyAnimator.SetTrigger("attack");
             MyAnimator.SetLayerWeight(MyAnimator.GetLayerIndex("Attack layer"), 1);
+            
+            return true;
         }
+        return false;
 
-        if (Input.GetMouseButtonUp(0))
-        {
-            //Releasing the left mouse button will stop attack from repeating
-            MyAnimator.ResetTrigger("attack");
+        //if (Input.GetMouseButtonUp(0))
+        //{
+        //    //Releasing the left mouse button will stop attack from repeating
+        //    MyAnimator.ResetTrigger("attack");
 
-        }
+        //    return false;
+        //}else return true;
     }
     void PlayerDodge(Vector3 gp, Vector3 rM)
     {
         cc.Move((gp + rM) * PlayerRunSpeed * Time.deltaTime);
         MyAnimator.SetBool("dodge", true);
         
+    }
+    public int test()
+    {
+        return 1;
     }
 }

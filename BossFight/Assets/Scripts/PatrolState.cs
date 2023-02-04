@@ -6,7 +6,7 @@ using UnityEngine.AI;
 public class PatrolState : StateMachineBehaviour
 {
     float timer;
-    float chaseRange = 8;
+    float chaseRange = 12;
     Transform player;
 
     List<Transform>waypoints= new List<Transform>();
@@ -38,7 +38,7 @@ public class PatrolState : StateMachineBehaviour
         }
 
         timer += Time.deltaTime;
-        if (timer > 5)
+        if (timer > 3)
         {
             animator.SetBool("isPatrolling", false);
         }

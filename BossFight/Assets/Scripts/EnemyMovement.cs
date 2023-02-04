@@ -12,7 +12,6 @@ public class EnemyMovement : MonoBehaviour
     private float dragonFastSpeed = 1.2f;
     void Update()
     {
-        //&& !dragonAnim.GetCurrentAnimatorStateInfo(0).IsName("AttackState")
         if (dragonAnim.GetBool("isChasing") == true )
         {
             LookAtPlayer();
