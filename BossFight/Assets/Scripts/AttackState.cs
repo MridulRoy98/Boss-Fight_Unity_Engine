@@ -11,6 +11,9 @@ public class AttackState : StateMachineBehaviour
 
     private float[] attackOptions = new float[] { 0f, 0.5f, 1f };
 
+    
+    
+    
     // OnStateEnter is called when a transition starts and the state machine starts to evaluate this state
     override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
@@ -32,11 +35,17 @@ public class AttackState : StateMachineBehaviour
 
     }
 
+    public int ChooseDragonAttack()
+    {
+        int DragonAttack = Random.Range(0, 3);
+        return DragonAttack;
+    }
+
     // OnStateExit is called when a transition ends and the state machine finishes evaluating this state
     override public void OnStateExit(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
-        int DragonAttack = Random.Range(0, 3);
-        animator.SetFloat("attacks", attackOptions[DragonAttack]);
+        
+        animator.SetFloat("attacks", attackOptions[ChooseDragonAttack()]);
     }
 
     // OnStateMove is called right after Animator.OnAnimatorMove()

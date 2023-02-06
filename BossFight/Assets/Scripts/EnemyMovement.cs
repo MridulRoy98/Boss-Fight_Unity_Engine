@@ -8,8 +8,8 @@ public class EnemyMovement : MonoBehaviour
     public Transform player;
     public Animator dragonAnim;
 
-    private float dragonSlowSpeed = 0.5f;
-    private float dragonFastSpeed = 1.2f;
+    private float dragonSlowSpeed = 0.3f;
+    private float dragonFastSpeed = 1.5f;
     void Update()
     {
         if (dragonAnim.GetBool("isChasing") == true )
@@ -18,29 +18,33 @@ public class EnemyMovement : MonoBehaviour
         }
     }
 
+
     public void ClawAttackSlow()
     {
         dragonAnim.speed = dragonSlowSpeed;
     }
-    public void ClawAttackFast()
+    public bool ClawAttackFast()
     {
         dragonAnim.speed = dragonFastSpeed;
+        return true;
     }
     public void BasicAttackSlow()
     {
         dragonAnim.speed = dragonSlowSpeed;
     }
-    public void BasicAttackFast()
+    public bool BasicAttackFast()
     {
         dragonAnim.speed = dragonFastSpeed;
+        return true;
     }
     public void HornAttackSlow()
     {
         dragonAnim.speed = dragonSlowSpeed;
     }
-    public void HornAttackFast()
+    public bool HornAttackFast()
     {
         dragonAnim.speed = dragonFastSpeed;
+        return true;
     }
     void LookAtPlayer()
     {

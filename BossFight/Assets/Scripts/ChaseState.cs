@@ -25,11 +25,11 @@ override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo
 
 
         float distance = Vector3.Distance(player.position, animator.transform.position);
-        if (distance >15)
+        if (distance >20f)
         {
             animator.SetBool("isChasing", false);
         }
-        if (distance < 4f)
+        if (distance < 3f)
         {
             animator.SetBool("isAttacking", true);
         }
