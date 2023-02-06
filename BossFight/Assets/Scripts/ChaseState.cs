@@ -29,7 +29,7 @@ override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo
         {
             animator.SetBool("isChasing", false);
         }
-        if (distance < 3f)
+        if (distance < 4f)
         {
             animator.SetBool("isAttacking", true);
         }

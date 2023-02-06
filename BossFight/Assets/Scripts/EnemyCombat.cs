@@ -28,41 +28,15 @@ public class EnemyCombat : MonoBehaviour
     }
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.CompareTag("Player")) 
+        if (other.gameObject.name == "ToonRTS_demo_Knight") 
         {
-            if (DragonAttackState.ChooseDragonAttack() == 2 || DragonAttackState.ChooseDragonAttack() == 1 || DragonAttackState.ChooseDragonAttack() == 0)
+           if(DragonMovement.ClawAttackFast() || DragonMovement.BasicAttackFast() || DragonMovement.HornAttackFast())
             {
-                if (this.gameObject.name == HeadAttackBone.name)
-                {
-                    if(DragonMovement.ClawAttackFast() || DragonMovement.BasicAttackFast() || DragonMovement.HornAttackFast())
-                    {
-                        DragonAttackFlag = true;
-                        combatManager.PlayerTakeDamage();
-                    }
-                    else DragonAttackFlag = false;
-                }
-                else DragonAttackFlag = false;
+              combatManager.PlayerTakeDamage();
             }
-            else DragonAttackFlag = false;
         }
-        else DragonAttackFlag = false;
     }
-    //public bool DragonAttack()
-    //{
-    //    if(DragonAttackFlag == true)
-    //    {
-    //        return true;
-    //    }
-    //    else
-    //    {
-    //        return false;
-    //    }
-    //}
 
-    private void OnTriggerExit(Collider other)
-    {
-        DragonAttackFlag = false;
-    }
 
 
 }

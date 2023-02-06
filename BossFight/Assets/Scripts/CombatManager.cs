@@ -8,7 +8,7 @@ public class CombatManager : MonoBehaviour
     [Header("Dragon Stats")]
 
     [SerializeField] private int DragonHP = 1500;
-    [SerializeField] private int DragonDamage = 100;
+    //[SerializeField] private int DragonDamage = 100;
                      private bool DragonIsDead;
    
 
