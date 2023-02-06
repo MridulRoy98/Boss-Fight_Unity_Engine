@@ -43,11 +43,15 @@ public class PlayerCombat : MonoBehaviour
         }
     }
 
-    void PlayerAttack()
+    public bool PlayerAttack()
     {
         if (CheckAnimation() == true && canAttack == true)
         {
-            Debug.Log("Attacked Enemy");
+            return true;
+        }
+        else
+        {
+            return false;
         }
     }
 }

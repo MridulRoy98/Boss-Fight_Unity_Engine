@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Runtime.InteropServices.WindowsRuntime;
 using Unity.VisualScripting;
 using UnityEngine;
 
@@ -13,16 +14,18 @@ public class EnemyCombat : MonoBehaviour
 
     AttackState DragonAttackState;
     EnemyMovement DragonMovement;
+    CombatManager combatManager;
 
     private bool DragonAttackFlag = false;
     public Animator DragonAnim;
 
+    int playerHP;
     private void Start()
     {
+        combatManager = GameObject.Find("GameManager").GetComponent<CombatManager>();
         DragonMovement = GameObject.Find("NightmareDragon").GetComponent<EnemyMovement>();
         DragonAttackState = DragonAnim.GetBehaviour<AttackState>();
     }
-
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.CompareTag("Player")) 
@@ -34,7 +37,7 @@ public class EnemyCombat : MonoBehaviour
                     if(DragonMovement.ClawAttackFast() || DragonMovement.BasicAttackFast() || DragonMovement.HornAttackFast())
                     {
                         DragonAttackFlag = true;
-                        DragonAttack();
+                        combatManager.PlayerTakeDamage();
                     }
                     else DragonAttackFlag = false;
                 }
@@ -44,10 +47,17 @@ public class EnemyCombat : MonoBehaviour
         }
         else DragonAttackFlag = false;
     }
-    private void DragonAttack()
-    {
-        Debug.Log("Dragon Attacking");
-    }
+    //public bool DragonAttack()
+    //{
+    //    if(DragonAttackFlag == true)
+    //    {
+    //        return true;
+    //    }
+    //    else
+    //    {
+    //        return false;
+    //    }
+    //}
 
     private void OnTriggerExit(Collider other)
     {
