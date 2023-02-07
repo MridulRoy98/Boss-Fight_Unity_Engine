@@ -18,12 +18,15 @@ public class CombatManager : MonoBehaviour
     [SerializeField] private int PlayerDamage = 75;
                      private bool PlayerIsDead;
 
-
+    PlayerMovement playerMovement;
+    RagDollManager PlayerRagDoll;
     PlayerCombat playerCombat;
     EnemyCombat enemyCombat;
 
     private void Start()
     {
+        playerMovement = GameObject.Find("Player").GetComponent<PlayerMovement>();
+        PlayerRagDoll = GetComponent<RagDollManager>();
         PlayerHP = 500;
         playerCombat = GameObject.Find("Bip001 R Hand").GetComponent<PlayerCombat>();
         enemyCombat = GameObject.Find("Jaw01").GetComponent<EnemyCombat>();
@@ -62,15 +65,16 @@ public class CombatManager : MonoBehaviour
     {
         getHealth();
 
-        if (getHealth() > 0)
+        if (getHealth() > 0f)
         {
-            PlayerHP -= 100;
+            PlayerHP -= 95;
             Debug.Log("PlayerHP: " + PlayerHP);
             setHealth(PlayerHP);
         }
-        else
+        if(getHealth() <= 0f)
         {
-            //Ragdoll
+            playerMovement.enabled= false;
+            //PlayerRagDoll.RagdollOn();
         }
         
     }
@@ -78,7 +82,7 @@ public class CombatManager : MonoBehaviour
     {
         PlayerHP = playerHealth;
     }
-    int getHealth()
+    public int getHealth()
     {
         return PlayerHP;
     }

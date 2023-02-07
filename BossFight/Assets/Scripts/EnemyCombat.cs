@@ -16,7 +16,7 @@ public class EnemyCombat : MonoBehaviour
     EnemyMovement DragonMovement;
     CombatManager combatManager;
 
-    private bool DragonAttackFlag = false;
+    //private bool DragonAttackFlag = false;
     public Animator DragonAnim;
 
     int playerHP;
