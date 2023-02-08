@@ -8,6 +8,7 @@ public class AttackState : StateMachineBehaviour
     EnemyMovement enemyMovement;
     NavMeshAgent agent;
     Transform player;
+    CombatManager combatManager;
 
     private float[] attackOptions = new float[] { 0f, 0.5f, 1f };
 
@@ -27,7 +28,7 @@ public class AttackState : StateMachineBehaviour
     {
         float distance = Vector3.Distance(player.position, animator.transform.position);
 
-        if (distance > 3.5f)
+        if (distance > 3f)
         {
             animator.SetBool("isAttacking", false);
         }

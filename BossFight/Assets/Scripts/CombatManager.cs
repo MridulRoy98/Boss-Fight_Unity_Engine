@@ -7,9 +7,9 @@ public class CombatManager : MonoBehaviour
 {
     [Header("Dragon Stats")]
 
-    [SerializeField] private int DragonHP = 1500;
+    [SerializeField] private int DragonHP;
     //[SerializeField] private int DragonDamage = 100;
-                     private bool DragonIsDead;
+                    // private bool DragonIsDead;
    
 
     [Header("Player Stats")]
@@ -23,8 +23,12 @@ public class CombatManager : MonoBehaviour
     PlayerCombat playerCombat;
     EnemyCombat enemyCombat;
 
+    UI_Manager ui;
+
     private void Start()
     {
+        DragonHP = 1500;
+        ui = GameObject.Find("Healthbar_Canvas").GetComponent<UI_Manager>();
         playerMovement = GameObject.Find("Player").GetComponent<PlayerMovement>();
         PlayerRagDoll = GetComponent<RagDollManager>();
         PlayerHP = 500;
@@ -32,34 +36,32 @@ public class CombatManager : MonoBehaviour
         enemyCombat = GameObject.Find("Jaw01").GetComponent<EnemyCombat>();
     }
 
-    private void DragonTakeDamage()
+    public void DragonTakeDamage()
     {
-        if (playerCombat.PlayerAttack() == true)
+        if (DragonHP > 0)
         {
             DragonHP -= PlayerDamage;
+            ui.UpdateHealthBar(1500, getDragonHP());
+            setDragonHP(DragonHP);
             Debug.Log("Dragon HP: " + DragonHP);
+
         }
-        //if(DragonHP <= 0)
-        //{
-        //    DragonIsDead= true;
-        //    Debug.Log("Dragon is Dead");
-        //}
+        if(getDragonHP() <= 0)
+        {
+            //DragonIsDead= true;
+            Debug.Log("Dragon is Dead");
+        }
 
     }
+    private void setDragonHP(int dragonHealth)
+    {
+        DragonHP= dragonHealth;
+    }
+    public int getDragonHP()
+    {
+        return DragonHP;
+    }
 
-    //private void PlayerTakeDamage()
-    //{
-    //    if(enemyCombat.DragonAttack() == true)
-    //    {
-    //        PlayerHP -= DragonDamage;
-    //        Debug.Log(PlayerHP);
-    //    }
-    //    //if (PlayerHP <= 0)
-    //    //{
-    //    //    PlayerIsDead= true;
-    //    //    Debug.Log("Player is dead");
-    //    //}
-    //}
 
     public void PlayerTakeDamage()
     {
@@ -85,12 +87,10 @@ public class CombatManager : MonoBehaviour
     public int getHealth()
     {
         return PlayerHP;
+        //return 0;
     }
 
-    private void Update()
-    {
-        DragonTakeDamage();
-    }
+    
 
     
 

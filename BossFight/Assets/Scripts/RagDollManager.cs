@@ -54,7 +54,12 @@ public class RagDollManager : MonoBehaviour
         cc.enabled = true;
         foreach (Collider col in ragDollColliders)
         {
-            if(col.gameObject.name != "ToonRTS_demo_Knight")
+            
+            if(col.gameObject.name == "ToonRTS_demo_Knight" || col.gameObject.name == "Bip001 R Hand")
+            {
+                col.enabled = true;
+            }
+            else
             {
                 col.enabled = false;
             }

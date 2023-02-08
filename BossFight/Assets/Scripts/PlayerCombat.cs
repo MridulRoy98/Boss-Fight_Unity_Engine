@@ -9,11 +9,14 @@ public class PlayerCombat : MonoBehaviour
     private bool canAttack = false;
 
     PlayerMovement playermovement;
+    CombatManager combatManager;
     private void Start()
     {
         playermovement = playerGameObject.GetComponent<PlayerMovement>();
+        combatManager = GameObject.Find("GameManager").GetComponent<CombatManager>();
     }
 
+    
     private void Update()
     {
         PlayerAttack();
@@ -43,15 +46,11 @@ public class PlayerCombat : MonoBehaviour
         }
     }
 
-    public bool PlayerAttack()
+    public void PlayerAttack()
     {
         if (CheckAnimation() == true && canAttack == true)
         {
-            return true;
-        }
-        else
-        {
-            return false;
+            combatManager.DragonTakeDamage();
         }
     }
 }
