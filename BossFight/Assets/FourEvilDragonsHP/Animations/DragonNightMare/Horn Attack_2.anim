@@ -106730,8 +106730,15 @@ AnimationClip:
     floatParameter: 0
     intParameter: 0
     messageOptions: 0
-  - time: 0.7
+  - time: 0.93333334
     functionName: HornAttackFast
+    data: 
+    objectReferenceParameter: {fileID: 11500000, guid: 16ad1cb5a0a73ee42bd06343cb0f75df, type: 3}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
+  - time: 1.3333334
+    functionName: Horn_fin
     data: 
     objectReferenceParameter: {fileID: 11500000, guid: 16ad1cb5a0a73ee42bd06343cb0f75df, type: 3}
     floatParameter: 0

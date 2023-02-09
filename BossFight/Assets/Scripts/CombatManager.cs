@@ -2,15 +2,17 @@ using Newtonsoft.Json.Bson;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Animations.Rigging;
 
 public class CombatManager : MonoBehaviour
 {
     [Header("Dragon Stats")]
 
+    [SerializeField] private GameObject dragonGameObject;
     [SerializeField] private int DragonHP;
     //[SerializeField] private int DragonDamage = 100;
-                    // private bool DragonIsDead;
-   
+    // private bool DragonIsDead;
+    private Animator DragonAnim;
 
     [Header("Player Stats")]
 
@@ -18,6 +20,7 @@ public class CombatManager : MonoBehaviour
     [SerializeField] private int PlayerDamage = 75;
                      private bool PlayerIsDead;
 
+    //Script References
     PlayerMovement playerMovement;
     RagDollManager PlayerRagDoll;
     PlayerCombat playerCombat;
@@ -27,13 +30,19 @@ public class CombatManager : MonoBehaviour
 
     private void Start()
     {
+        dragonGameObject = GameObject.Find("NightmareDragon").GetComponent<GameObject>();
+
+        DragonAnim = GameObject.Find("NightmareDragon").GetComponent<Animator>();
+        playerCombat = GameObject.Find("Bip001 R Hand").GetComponent<PlayerCombat>();
+        enemyCombat = GameObject.Find("Jaw01").GetComponent<EnemyCombat>();
+
         DragonHP = 1500;
+        PlayerHP = 500;
+
         ui = GameObject.Find("Healthbar_Canvas").GetComponent<UI_Manager>();
         playerMovement = GameObject.Find("Player").GetComponent<PlayerMovement>();
         PlayerRagDoll = GetComponent<RagDollManager>();
-        PlayerHP = 500;
-        playerCombat = GameObject.Find("Bip001 R Hand").GetComponent<PlayerCombat>();
-        enemyCombat = GameObject.Find("Jaw01").GetComponent<EnemyCombat>();
+        
     }
 
     public void DragonTakeDamage()
@@ -48,6 +57,10 @@ public class CombatManager : MonoBehaviour
         }
         if(getDragonHP() <= 0)
         {
+            DragonAnim.SetBool("dead", true);
+            DragonAnim.SetBool("isAttacking", false);
+            DragonAnim.SetBool("isChasing", false);
+            //dragonGameObject.GetComponent<RigBuilder>().enabled= false;
             //DragonIsDead= true;
             Debug.Log("Dragon is Dead");
         }

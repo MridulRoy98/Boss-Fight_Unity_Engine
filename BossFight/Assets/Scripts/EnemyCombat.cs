@@ -28,11 +28,11 @@ public class EnemyCombat : MonoBehaviour
     }
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.name == "ToonRTS_demo_Knight") 
+        if (other.gameObject.name == "ToonRTS_demo_Knight" && DragonAnim.GetCurrentAnimatorStateInfo(0).IsName("AttackState")) 
         {
-           if(DragonMovement.ClawAttackFast() || DragonMovement.BasicAttackFast() || DragonMovement.HornAttackFast())
+           if(DragonMovement.Claw_fin() || DragonMovement.Basic_fin() || DragonMovement.Horn_fin())
             {
-              combatManager.PlayerTakeDamage();
+                combatManager.PlayerTakeDamage();
             }
         }
     }

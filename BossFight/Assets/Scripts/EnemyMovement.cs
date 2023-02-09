@@ -1,7 +1,10 @@
 using System.Collections;
 using System.Collections.Generic;
 using Unity.Mathematics;
+using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.Animations.Rigging;
+using Cinemachine;
 
 public class EnemyMovement : MonoBehaviour
 {
@@ -10,9 +13,13 @@ public class EnemyMovement : MonoBehaviour
 
     private float dragonSlowSpeed = 0.3f;
     private float dragonFastSpeed = 1.5f;
+
+    public CinemachineCollisionImpulseSource source;
+
     void Update()
     {
-        if (dragonAnim.GetBool("isChasing") == true )
+        
+        if (dragonAnim.GetBool("isChasing") == true && !dragonAnim.GetCurrentAnimatorStateInfo(0).IsName("die") )
         {
             LookAtPlayer();
         }
@@ -26,6 +33,7 @@ public class EnemyMovement : MonoBehaviour
     public bool ClawAttackFast()
     {
         dragonAnim.speed = dragonFastSpeed;
+        source.GenerateImpulse();
         return true;
     }
     public void BasicAttackSlow()
@@ -35,6 +43,7 @@ public class EnemyMovement : MonoBehaviour
     public bool BasicAttackFast()
     {
         dragonAnim.speed = dragonFastSpeed;
+        source.GenerateImpulse();
         return true;
     }
     public void HornAttackSlow()
@@ -44,6 +53,27 @@ public class EnemyMovement : MonoBehaviour
     public bool HornAttackFast()
     {
         dragonAnim.speed = dragonFastSpeed;
+        source.GenerateImpulse();
+        return true;
+    }
+
+    public bool Claw_fin()
+    {
+        return true;
+    }
+    public bool Horn_fin()
+    {
+        return true;
+    }
+    public bool Basic_fin()
+    {
+        return true;
+    }
+
+    public bool death()
+    {
+        dragonAnim.speed = dragonFastSpeed;
+        this.GetComponent<RigBuilder>().enabled = false;
         return true;
     }
     void LookAtPlayer()
