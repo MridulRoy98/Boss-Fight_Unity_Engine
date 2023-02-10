@@ -29,8 +29,9 @@ override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo
         {
             animator.SetBool("isChasing", false);
         }
-        if (distance < 3f)
+        if (distance < 2.5f)
         {
+            //Debug.Log(distance);
             animator.SetBool("isAttacking", true);
         }
     }

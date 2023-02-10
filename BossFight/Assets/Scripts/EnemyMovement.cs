@@ -13,9 +13,15 @@ public class EnemyMovement : MonoBehaviour
 
     private float dragonSlowSpeed = 0.3f;
     private float dragonFastSpeed = 1.5f;
+    public GameObject []trails;
+    private bool finishedAttack;
 
     public CinemachineCollisionImpulseSource source;
 
+    private void Start()
+    {
+        trailDeactivate();
+    }
     void Update()
     {
         
@@ -24,52 +30,79 @@ public class EnemyMovement : MonoBehaviour
             LookAtPlayer();
         }
     }
-
+    void trailActivate()
+    {
+        foreach (GameObject trail in trails)
+        {
+            trail.SetActive(true);
+        }
+    }
+    void trailDeactivate()
+    {
+        foreach (GameObject trail in trails)
+        {
+            trail.SetActive(false);
+        }
+    }
 
     public void ClawAttackSlow()
     {
+        finishedAttack = false;
         dragonAnim.speed = dragonSlowSpeed;
+        trailActivate();
     }
     public bool ClawAttackFast()
     {
         dragonAnim.speed = dragonFastSpeed;
-        source.GenerateImpulse();
         return true;
+    }
+    public void claw_end()
+    {
+        trailDeactivate();
     }
     public void BasicAttackSlow()
     {
+        trailDeactivate();
+        finishedAttack = false;
         dragonAnim.speed = dragonSlowSpeed;
     }
     public bool BasicAttackFast()
     {
         dragonAnim.speed = dragonFastSpeed;
-        source.GenerateImpulse();
         return true;
     }
     public void HornAttackSlow()
     {
+        trailDeactivate();
+        finishedAttack = false;
         dragonAnim.speed = dragonSlowSpeed;
     }
     public bool HornAttackFast()
     {
         dragonAnim.speed = dragonFastSpeed;
-        source.GenerateImpulse();
         return true;
     }
 
-    public bool Claw_fin()
+    public void Claw_fin()
     {
-        return true;
+        //Debug.Log("claw_fin");
+        finishedAttack= true;
     }
-    public bool Horn_fin()
+    public void Horn_fin()
     {
-        return true;
+        //Debug.Log("horn_fin");
+        finishedAttack= true;
     }
-    public bool Basic_fin()
+    public void Basic_fin()
     {
-        return true;
+        //Debug.Log("Basic_fin");
+        finishedAttack = true;
     }
 
+    public bool returnFinishedAttack()
+    {
+        return finishedAttack;
+    }
     public bool death()
     {
         dragonAnim.speed = dragonFastSpeed;

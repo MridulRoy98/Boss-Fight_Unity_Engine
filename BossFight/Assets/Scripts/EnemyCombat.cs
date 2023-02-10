@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Runtime.InteropServices.WindowsRuntime;
 using Unity.VisualScripting;
 using UnityEngine;
-
+using UnityEngine.UI;
 public class EnemyCombat : MonoBehaviour
 {
     [Header("Dragon Attack Bones")]
@@ -15,28 +15,30 @@ public class EnemyCombat : MonoBehaviour
     AttackState DragonAttackState;
     EnemyMovement DragonMovement;
     CombatManager combatManager;
+    UI_Manager uimanager;
 
     //private bool DragonAttackFlag = false;
     public Animator DragonAnim;
-
     int playerHP;
     private void Start()
     {
+        uimanager = GameObject.Find("Healthbar_Canvas").GetComponent<UI_Manager>();
         combatManager = GameObject.Find("GameManager").GetComponent<CombatManager>();
         DragonMovement = GameObject.Find("NightmareDragon").GetComponent<EnemyMovement>();
         DragonAttackState = DragonAnim.GetBehaviour<AttackState>();
     }
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.name == "ToonRTS_demo_Knight" && DragonAnim.GetCurrentAnimatorStateInfo(0).IsName("AttackState")) 
+        if (other.gameObject.name == "ToonRTS_demo_Knight" && DragonAnim.GetCurrentAnimatorStateInfo(0).IsName("AttackState"))
         {
-           if(DragonMovement.Claw_fin() || DragonMovement.Basic_fin() || DragonMovement.Horn_fin())
+            if (DragonMovement.ClawAttackFast() || DragonMovement.BasicAttackFast() || DragonMovement.HornAttackFast())
             {
-                combatManager.PlayerTakeDamage();
+                if (!DragonMovement.returnFinishedAttack())
+                {
+                    combatManager.PlayerTakeDamage();
+                    uimanager.ShowBloodSplatter();
+                }
             }
         }
     }
-
-
-
 }

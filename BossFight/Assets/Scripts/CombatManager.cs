@@ -10,8 +10,6 @@ public class CombatManager : MonoBehaviour
 
     [SerializeField] private GameObject dragonGameObject;
     [SerializeField] private int DragonHP;
-    //[SerializeField] private int DragonDamage = 100;
-    // private bool DragonIsDead;
     private Animator DragonAnim;
 
     [Header("Player Stats")]
@@ -60,8 +58,7 @@ public class CombatManager : MonoBehaviour
             DragonAnim.SetBool("dead", true);
             DragonAnim.SetBool("isAttacking", false);
             DragonAnim.SetBool("isChasing", false);
-            //dragonGameObject.GetComponent<RigBuilder>().enabled= false;
-            //DragonIsDead= true;
+
             Debug.Log("Dragon is Dead");
         }
 
@@ -83,13 +80,13 @@ public class CombatManager : MonoBehaviour
         if (getHealth() > 0f)
         {
             PlayerHP -= 95;
+            ui.ShowBloodSplatter();
             Debug.Log("PlayerHP: " + PlayerHP);
             setHealth(PlayerHP);
         }
         if(getHealth() <= 0f)
         {
             playerMovement.enabled= false;
-            //PlayerRagDoll.RagdollOn();
         }
         
     }
@@ -100,7 +97,6 @@ public class CombatManager : MonoBehaviour
     public int getHealth()
     {
         return PlayerHP;
-        //return 0;
     }
 
     
