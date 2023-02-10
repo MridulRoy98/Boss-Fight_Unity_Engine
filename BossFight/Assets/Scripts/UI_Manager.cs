@@ -19,6 +19,9 @@ public class UI_Manager : MonoBehaviour
     {
         Color bloodSplatterAlpha = bloodSplatter.color;
         bloodSplatterAlpha.a = 1;
+        
         bloodSplatter.color = bloodSplatterAlpha;
+        
+        
     }
 }

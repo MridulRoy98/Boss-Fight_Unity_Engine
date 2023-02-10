@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Animations.Rigging;
+using UnityEngine.SceneManagement;
 
 public class CombatManager : MonoBehaviour
 {
@@ -59,6 +60,7 @@ public class CombatManager : MonoBehaviour
             DragonAnim.SetBool("isAttacking", false);
             DragonAnim.SetBool("isChasing", false);
 
+            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
             Debug.Log("Dragon is Dead");
         }
 
@@ -87,6 +89,7 @@ public class CombatManager : MonoBehaviour
         if(getHealth() <= 0f)
         {
             playerMovement.enabled= false;
+            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         }
         
     }
