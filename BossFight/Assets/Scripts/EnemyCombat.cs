@@ -36,7 +36,7 @@ public class EnemyCombat : MonoBehaviour
                 if (!DragonMovement.returnFinishedAttack())
                 {
                     combatManager.PlayerTakeDamage();
-                    uimanager.ShowBloodSplatter();
+                    uimanager.StartCoroutine(uimanager.DoFade());
                 }
             }
         }

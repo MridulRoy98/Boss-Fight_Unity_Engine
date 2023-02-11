@@ -82,7 +82,7 @@ public class CombatManager : MonoBehaviour
         if (getHealth() > 0f)
         {
             PlayerHP -= 95;
-            ui.ShowBloodSplatter();
+            //ui.ShowBloodSplatter();
             Debug.Log("PlayerHP: " + PlayerHP);
             setHealth(PlayerHP);
         }
