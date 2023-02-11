@@ -24,7 +24,6 @@ public class EnemyMovement : MonoBehaviour
     }
     void Update()
     {
-        
         if (dragonAnim.GetBool("isChasing") == true && !dragonAnim.GetCurrentAnimatorStateInfo(0).IsName("die") )
         {
             LookAtPlayer();
@@ -56,8 +55,9 @@ public class EnemyMovement : MonoBehaviour
         dragonAnim.speed = dragonFastSpeed;
         return true;
     }
-    public void claw_end()
+    private void claw_end()
     {
+        //Debug.Log("claw_end");
         trailDeactivate();
     }
     public void BasicAttackSlow()

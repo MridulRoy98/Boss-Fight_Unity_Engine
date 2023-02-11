@@ -51,7 +51,7 @@ public class CombatManager : MonoBehaviour
             DragonHP -= PlayerDamage;
             ui.UpdateHealthBar(1500, getDragonHP());
             setDragonHP(DragonHP);
-            Debug.Log("Dragon HP: " + DragonHP);
+           // Debug.Log("Dragon HP: " + DragonHP);
 
         }
         if(getDragonHP() <= 0)
@@ -60,7 +60,7 @@ public class CombatManager : MonoBehaviour
             DragonAnim.SetBool("isAttacking", false);
             DragonAnim.SetBool("isChasing", false);
 
-            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+           // SceneManager.LoadScene(SceneManager.GetActiveScene().name);
             Debug.Log("Dragon is Dead");
         }
 
@@ -89,7 +89,7 @@ public class CombatManager : MonoBehaviour
         if(getHealth() <= 0f)
         {
             playerMovement.enabled= false;
-            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+           // SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         }
         
     }

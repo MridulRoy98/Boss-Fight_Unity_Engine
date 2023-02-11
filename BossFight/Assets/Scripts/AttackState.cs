@@ -12,9 +12,6 @@ public class AttackState : StateMachineBehaviour
 
     private float[] attackOptions = new float[] { 0f, 0.5f, 1f };
 
-    
-    
-    
     // OnStateEnter is called when a transition starts and the state machine starts to evaluate this state
     override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
@@ -28,12 +25,10 @@ public class AttackState : StateMachineBehaviour
     {
         float distance = Vector3.Distance(player.position, animator.transform.position);
 
-        if (distance > 3.5f)
+        if (distance > 3f)
         {
             animator.SetBool("isAttacking", false);
         }
-
-
     }
 
     public int ChooseDragonAttack()
@@ -48,16 +43,4 @@ public class AttackState : StateMachineBehaviour
         
         animator.SetFloat("attacks", attackOptions[ChooseDragonAttack()]);
     }
-
-    // OnStateMove is called right after Animator.OnAnimatorMove()
-    //override public void OnStateMove(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
-    //{
-    //    // Implement code that processes and affects root motion
-    //}
-
-    // OnStateIK is called right after Animator.OnAnimatorIK()
-    //override public void OnStateIK(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
-    //{
-    //    // Implement code that sets up animation IK (inverse kinematics)
-    //}
 }

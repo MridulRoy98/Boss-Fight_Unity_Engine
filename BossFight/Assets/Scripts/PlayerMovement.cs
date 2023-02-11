@@ -23,16 +23,18 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private float YSpeed = 0f;
     [SerializeField] private float gravity = -9.81f;
 
+    
+
 
     private void Start()
     {
         //Stops cursor from moving around while playing the game
         Cursor.lockState = CursorLockMode.Locked;
+        
     }
     private void Update()
     {
         PlayerAttack();
-        //Gravity();
         Move();
     }
 
@@ -91,32 +93,34 @@ public class PlayerMovement : MonoBehaviour
     }
     public bool PlayerAttack()
     {
+        
         if (Input.GetMouseButtonDown(0))
         {
             //Pressing the left mouse button will trigger the attack animation
-            MyAnimator.SetTrigger("attack");
             MyAnimator.SetLayerWeight(MyAnimator.GetLayerIndex("Attack layer"), 1);
-            
+
+            int randomAttack = Random.Range(1, 3);
+
+            if (randomAttack == 1)
+            {
+                MyAnimator.SetTrigger("attack");
+                MyAnimator.ResetTrigger("attack_2");
+            }
+            else
+            {
+                MyAnimator.ResetTrigger("attack");
+                MyAnimator.SetTrigger("attack_2");
+            }
             return true;
         }
         return false;
-
-        //if (Input.GetMouseButtonUp(0))
-        //{
-        //    //Releasing the left mouse button will stop attack from repeating
-        //    MyAnimator.ResetTrigger("attack");
-
-        //    return false;
-        //}else return true;
     }
+
+    
     void PlayerDodge(Vector3 gp, Vector3 rM)
     {
         cc.Move((gp + rM) * PlayerRunSpeed * Time.deltaTime);
         MyAnimator.SetBool("dodge", true);
         
-    }
-    public int test()
-    {
-        return 1;
     }
 }
