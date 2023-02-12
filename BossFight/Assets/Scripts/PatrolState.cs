@@ -8,9 +8,11 @@ public class PatrolState : StateMachineBehaviour
     float timer;
     float chaseRange = 12;
     Transform player;
+    AudioManager audioMan;
+    bool isChasing = false;
 
     List<Transform>waypoints= new List<Transform>();
-    NavMeshAgent agent;
+    public NavMeshAgent agent;
 
     // OnStateEnter is called when a transition starts and the state machine starts to evaluate this state
     override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
@@ -46,7 +48,15 @@ public class PatrolState : StateMachineBehaviour
         if (distance <= chaseRange)
         {
             animator.SetBool("isChasing", true);
+            isChasing= true;
         }
+    }
+    public bool isDragonChasing()
+    {
+        if(isChasing == true)
+        {
+            return true;
+        }return false;
     }
 
     // OnStateExit is called when a transition ends and the state machine finishes evaluating this state

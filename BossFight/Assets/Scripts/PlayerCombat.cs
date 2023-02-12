@@ -24,7 +24,7 @@ public class PlayerCombat : MonoBehaviour
     private bool CheckAnimation()
     {
         //Checking whether the player is in Attack animation state
-        if(playermovement.PlayerAttack() == true)
+        if(playermovement.PlayerAttack() == true && (!PlayerAnim.GetCurrentAnimatorStateInfo(1).IsName("attack") && !PlayerAnim.GetCurrentAnimatorStateInfo(1).IsName("attack_2")))
         {
             return true;
         }

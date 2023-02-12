@@ -16,7 +16,7 @@ public class EnemyMovement : MonoBehaviour
     public GameObject []trails;
     private bool finishedAttack;
 
-    public CinemachineCollisionImpulseSource source;
+   
 
     private void Start()
     {

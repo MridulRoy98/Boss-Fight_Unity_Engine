@@ -19,6 +19,7 @@ public class EnemyCombat : MonoBehaviour
 
     //private bool DragonAttackFlag = false;
     public Animator DragonAnim;
+    public Animator PlayerAnim;
     int playerHP;
     private void Start()
     {
@@ -36,6 +37,7 @@ public class EnemyCombat : MonoBehaviour
                 if (!DragonMovement.returnFinishedAttack())
                 {
                     combatManager.PlayerTakeDamage();
+                    PlayerAnim.SetTrigger("getHit");
                     uimanager.StartCoroutine(uimanager.DoFade());
                 }
             }

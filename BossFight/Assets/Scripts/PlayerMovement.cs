@@ -34,8 +34,12 @@ public class PlayerMovement : MonoBehaviour
     }
     private void Update()
     {
-        PlayerAttack();
-        Move();
+        if (!MyAnimator.GetCurrentAnimatorStateInfo(0).IsName("getHit"))
+        {
+            PlayerAttack();
+            Move();
+        }
+        
     }
 
     private void Move()
@@ -93,26 +97,30 @@ public class PlayerMovement : MonoBehaviour
     }
     public bool PlayerAttack()
     {
-        
-        if (Input.GetMouseButtonDown(0))
+        if (!MyAnimator.GetCurrentAnimatorStateInfo(1).IsName("attack") && !MyAnimator.GetCurrentAnimatorStateInfo(1).IsName("attack_2"))
         {
-            //Pressing the left mouse button will trigger the attack animation
-            MyAnimator.SetLayerWeight(MyAnimator.GetLayerIndex("Attack layer"), 1);
-
-            int randomAttack = Random.Range(1, 3);
-
-            if (randomAttack == 1)
+            if (Input.GetMouseButtonDown(0))
             {
-                MyAnimator.SetTrigger("attack");
-                MyAnimator.ResetTrigger("attack_2");
+                //Pressing the left mouse button will trigger the attack animation
+                MyAnimator.SetLayerWeight(MyAnimator.GetLayerIndex("Attack layer"), 1);
+
+                int randomAttack = Random.Range(1, 3);
+
+                if (randomAttack == 1)
+                {
+                    MyAnimator.SetTrigger("attack");
+                    MyAnimator.ResetTrigger("attack_2");
+                }
+                else
+                {
+                    MyAnimator.ResetTrigger("attack");
+                    MyAnimator.SetTrigger("attack_2");
+                }
+                return true;
             }
-            else
-            {
-                MyAnimator.ResetTrigger("attack");
-                MyAnimator.SetTrigger("attack_2");
-            }
-            return true;
+
         }
+        
         return false;
     }
 

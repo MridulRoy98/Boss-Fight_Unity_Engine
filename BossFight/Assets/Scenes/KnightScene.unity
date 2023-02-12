@@ -1346,7 +1346,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 245295769}
-  m_LocalRotation: {x: 0.07617943, y: 0.012508015, z: -0.0009557062, w: 0.99701524}
+  m_LocalRotation: {x: 0.07617944, y: 0.012504492, z: -0.00095543684, w: 0.9970153}
   m_LocalPosition: {x: -0.02, y: 2.6369998, z: -15.070001}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -1811,6 +1811,8 @@ GameObject:
   - component: {fileID: 311259848}
   - component: {fileID: 311259849}
   - component: {fileID: 311259850}
+  - component: {fileID: 311259852}
+  - component: {fileID: 311259851}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -1826,7 +1828,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 311259846}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -2.9463325, y: -0.09883618, z: 1.2910967}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1865,6 +1867,119 @@ MonoBehaviour:
   character: {fileID: 2102075044}
   ragDollColliders: []
   ragDollRigidbodies: []
+--- !u!82 &311259851
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 311259846}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 0.056
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 2.31
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0.16388889
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!114 &311259852
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 311259846}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d7d1175b96fd534f8fffe0f772ec965, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxVolume: 1
+  minVolume: 0
+  clip: {fileID: 8300000, guid: 51f2a41a518fc864a9c87a8eb0de259f, type: 3}
+  fadeInDuration: 2
+  fadeOutDuration: 2
 --- !u!1 &315957447
 GameObject:
   m_ObjectHideFlags: 0
@@ -2801,21 +2916,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 140538, guid: edd34a89cfe571f4ca766dcca2459bbe, type: 3}
   m_PrefabInstance: {fileID: 239211065}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &473967828
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 473967826}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 92f8c26f87add2346b000551af356196, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ClawAttackBone: {fileID: 2076925392}
-  HeadAttackBone: {fileID: 608761479}
-  DragonAnim: {fileID: 267218877}
 --- !u!1001 &500014419
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3381,6 +3481,7 @@ MonoBehaviour:
   ClawAttackBone: {fileID: 2076925392}
   HeadAttackBone: {fileID: 608761479}
   DragonAnim: {fileID: 267218877}
+  PlayerAnim: {fileID: 759191968}
 --- !u!65 &608761482
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4285,7 +4386,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 739466369}
-  m_LocalRotation: {x: -0.12527724, y: 0.00000000858833, z: -0.00000000503738, w: 0.9921218}
+  m_LocalRotation: {x: -0.12527724, y: 0.0000000074208844, z: -0.0000000043526285, w: 0.9921218}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -5670,7 +5771,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 978453948}
-  m_LocalRotation: {x: -0.1882659, y: -0.000000015366506, z: 0.0000000077414555, w: 0.9821181}
+  m_LocalRotation: {x: -0.1882659, y: 0.000000015366506, z: -0.0000000077414555, w: 0.9821181}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -11172,7 +11273,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1949627972}
-  m_LocalRotation: {x: -0.24910408, y: 0.011533141, z: -0.0049346155, w: 0.9683955}
+  m_LocalRotation: {x: -0.24910408, y: 0.011529891, z: -0.0049332245, w: 0.96839553}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -12459,6 +12560,7 @@ MonoBehaviour:
   ClawAttackBone: {fileID: 2076925392}
   HeadAttackBone: {fileID: 473967826}
   DragonAnim: {fileID: 267218877}
+  PlayerAnim: {fileID: 759191968}
 --- !u!65 &2076925395
 BoxCollider:
   m_ObjectHideFlags: 0

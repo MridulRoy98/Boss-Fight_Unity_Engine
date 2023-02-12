@@ -24,11 +24,17 @@ public class CombatManager : MonoBehaviour
     RagDollManager PlayerRagDoll;
     PlayerCombat playerCombat;
     EnemyCombat enemyCombat;
+    AudioManager audioMan;
+    Behaviour patrolBehaviour;
 
     UI_Manager ui;
 
+
     private void Start()
     {
+        audioMan = GetComponent<AudioManager>();
+        patrolBehaviour = DragonAnim.GetComponent<Behaviour>();
+
         dragonGameObject = GameObject.Find("NightmareDragon").GetComponent<GameObject>();
 
         DragonAnim = GameObject.Find("NightmareDragon").GetComponent<Animator>();
