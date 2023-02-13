@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
+    public GameObject musicPlayer;
+    AudioManager audioMan;
+
     [Header("Animation")]
     [SerializeField] Animator MyAnimator;
 
@@ -25,9 +28,9 @@ public class PlayerMovement : MonoBehaviour
 
     
 
-
     private void Start()
     {
+        audioMan =GameObject.Find("GameManager").GetComponent<AudioManager>();
         //Stops cursor from moving around while playing the game
         Cursor.lockState = CursorLockMode.Locked;
         
@@ -42,6 +45,15 @@ public class PlayerMovement : MonoBehaviour
         
     }
 
+    private void OnTriggerEnter(Collider other)
+    {
+       if(other.gameObject.name == musicPlayer.name)
+       {
+            Debug.Log(other.name);
+           audioMan.StartMusic();
+           other.gameObject.SetActive(false);
+       }
+    }
     private void Move()
     {
         //The idle animation will be true by default

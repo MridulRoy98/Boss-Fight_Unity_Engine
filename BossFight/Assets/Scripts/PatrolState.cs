@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.AI;
 
@@ -8,11 +9,11 @@ public class PatrolState : StateMachineBehaviour
     float timer;
     float chaseRange = 12;
     Transform player;
-    AudioManager audioMan;
     bool isChasing = false;
 
     List<Transform>waypoints= new List<Transform>();
-    public NavMeshAgent agent;
+    NavMeshAgent agent;
+
 
     // OnStateEnter is called when a transition starts and the state machine starts to evaluate this state
     override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
@@ -51,9 +52,9 @@ public class PatrolState : StateMachineBehaviour
             isChasing= true;
         }
     }
-    public bool isDragonChasing()
+    public bool TheDragonIsChasing()
     {
-        if(isChasing == true)
+        if (isChasing == true)
         {
             return true;
         }return false;

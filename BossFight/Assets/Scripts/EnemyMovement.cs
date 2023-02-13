@@ -13,10 +13,11 @@ public class EnemyMovement : MonoBehaviour
 
     private float dragonSlowSpeed = 0.3f;
     private float dragonFastSpeed = 1.5f;
-    public GameObject []trails;
     private bool finishedAttack;
+    public GameObject[] trails;
 
-   
+
+
 
     private void Start()
     {

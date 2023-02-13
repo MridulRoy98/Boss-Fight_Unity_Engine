@@ -9,12 +9,12 @@ public class CombatManager : MonoBehaviour
 {
     [Header("Dragon Stats")]
 
-    [SerializeField] private GameObject dragonGameObject;
+    [SerializeField] private GameObject DragonBody;
     [SerializeField] private int DragonHP;
     private Animator DragonAnim;
 
     [Header("Player Stats")]
-
+    [SerializeField] private GameObject PlayerBody;
     [SerializeField] private int PlayerHP;
     [SerializeField] private int PlayerDamage = 75;
                      private bool PlayerIsDead;
@@ -24,18 +24,18 @@ public class CombatManager : MonoBehaviour
     RagDollManager PlayerRagDoll;
     PlayerCombat playerCombat;
     EnemyCombat enemyCombat;
-    AudioManager audioMan;
     Behaviour patrolBehaviour;
+
 
     UI_Manager ui;
 
 
     private void Start()
     {
-        audioMan = GetComponent<AudioManager>();
-        patrolBehaviour = DragonAnim.GetComponent<Behaviour>();
+        //patrolBehaviour = DragonAnim.GetComponent<Behaviour>();
 
-        dragonGameObject = GameObject.Find("NightmareDragon").GetComponent<GameObject>();
+        PlayerBody = GetComponent<GameObject>();
+        DragonBody = GetComponent<GameObject>();
 
         DragonAnim = GameObject.Find("NightmareDragon").GetComponent<Animator>();
         playerCombat = GameObject.Find("Bip001 R Hand").GetComponent<PlayerCombat>();

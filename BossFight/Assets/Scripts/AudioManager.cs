@@ -4,13 +4,13 @@ using UnityEngine;
 
 public class AudioManager : MonoBehaviour
 {
-    public float maxVolume = 1f;
+    public float maxVolume = 0.02f;
     public float minVolume = 0f;
     private AudioSource source;
     public AudioClip clip;
 
-    public float fadeInDuration = 2f;
-    public float fadeOutDuration = 2f;
+    public float fadeInDuration = 300f;
+    public float fadeOutDuration = 10f;
 
     private IEnumerator fadeIn;
     private IEnumerator fadeOut;
@@ -18,7 +18,7 @@ public class AudioManager : MonoBehaviour
     public static AudioManager instance;
 
     private void Awake()
-    {
+    { 
         if (!instance)
         {
             instance = this;
