@@ -10,7 +10,7 @@ public class UI_Manager : MonoBehaviour
     [SerializeField] private Image bloodSplatter;
     [SerializeField] private Color transparentColor;
     [SerializeField] private Color color;
-    [SerializeField] private float fadeOutDuration = 1f;
+    //[SerializeField] private float fadeOutDuration = 1f;
 
     public CombatManager combatManager;
 
