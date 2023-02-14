@@ -44,12 +44,11 @@ public class PlayerMovement : MonoBehaviour
         }
         
     }
-
     private void OnTriggerEnter(Collider other)
     {
        if(other.gameObject.name == musicPlayer.name)
        {
-            Debug.Log(other.name);
+           //Debug.Log(other.name);
            audioMan.StartMusic();
            other.gameObject.SetActive(false);
        }

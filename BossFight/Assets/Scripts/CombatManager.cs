@@ -67,7 +67,7 @@ public class CombatManager : MonoBehaviour
             DragonAnim.SetBool("isChasing", false);
 
            // SceneManager.LoadScene(SceneManager.GetActiveScene().name);
-            Debug.Log("Dragon is Dead");
+          //Debug.Log("Dragon is Dead");
         }
 
     }
@@ -89,7 +89,7 @@ public class CombatManager : MonoBehaviour
         {
             PlayerHP -= 95;
             //ui.ShowBloodSplatter();
-            Debug.Log("PlayerHP: " + PlayerHP);
+            //Debug.Log("PlayerHP: " + PlayerHP);
             setHealth(PlayerHP);
         }
         if(getHealth() <= 0f)
