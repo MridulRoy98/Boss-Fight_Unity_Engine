@@ -55,7 +55,7 @@ public class RagDollManager : MonoBehaviour
         foreach (Collider col in ragDollColliders)
         {
             
-            if(col.gameObject.name == "ToonRTS_demo_Knight" || col.gameObject.name == "Bip001 R Hand" || col.gameObject.name == "Sword_Trail")
+            if(col.gameObject.name == "ToonRTS_demo_Knight" || col.gameObject.name == "Bip001 R Hand" || col.gameObject.name == "Sword_Trail" || col.gameObject.name == "CameraLookAt")
             {
                 col.enabled = true;
             }

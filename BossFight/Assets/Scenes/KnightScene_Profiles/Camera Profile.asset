@@ -28,6 +28,53 @@ MonoBehaviour:
   kernelSize:
     overrideState: 0
     value: 1
+--- !u!114 &-3134449412227754440
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 48a79b01ea5641d4aa6daa2e23605641, type: 3}
+  m_Name: Bloom
+  m_EditorClassIdentifier: 
+  active: 1
+  enabled:
+    overrideState: 1
+    value: 1
+  intensity:
+    overrideState: 1
+    value: 6.41
+  threshold:
+    overrideState: 1
+    value: 0.71
+  softKnee:
+    overrideState: 1
+    value: 0.236
+  clamp:
+    overrideState: 0
+    value: 65472
+  diffusion:
+    overrideState: 1
+    value: 6.61
+  anamorphicRatio:
+    overrideState: 0
+    value: 0
+  color:
+    overrideState: 1
+    value: {r: 0.33959845, g: 0.28235295, b: 0.9254902, a: 1}
+  fastMode:
+    overrideState: 0
+    value: 0
+  dirtTexture:
+    overrideState: 0
+    value: {fileID: 0}
+    defaultState: 1
+  dirtIntensity:
+    overrideState: 0
+    value: 0
 --- !u!114 &-2367525762036800876
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -99,7 +146,7 @@ MonoBehaviour:
     value: 0
   postExposure:
     overrideState: 1
-    value: 1.63
+    value: 1.85
   contrast:
     overrideState: 1
     value: -12
@@ -132,13 +179,13 @@ MonoBehaviour:
     value: 100
   lift:
     overrideState: 1
-    value: {x: 0.873087, y: 0.9999992, z: 1, w: -0.076988816}
+    value: {x: 0.873087, y: 0.9999992, z: 1, w: -0.08994265}
   gamma:
     overrideState: 1
-    value: {x: 1, y: 0.90138286, z: 0.94983125, w: 0.47904187}
+    value: {x: 1, y: 0.90138286, z: 0.94983125, w: 0.6623059}
   gain:
     overrideState: 1
-    value: {x: 0.99588853, y: 1, z: 0.76107615, w: 0.29940113}
+    value: {x: 0.99588853, y: 1, z: 0.76107615, w: 0.07358954}
   masterCurve:
     overrideState: 0
     value:
@@ -1356,6 +1403,7 @@ MonoBehaviour:
   - {fileID: -5263695412247706566}
   - {fileID: 4706575881116682023}
   - {fileID: -2367525762036800876}
+  - {fileID: -3134449412227754440}
 --- !u!114 &4706575881116682023
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -1426,13 +1474,13 @@ MonoBehaviour:
     value: 0
   color:
     overrideState: 1
-    value: {r: 0.01183696, g: 0.0786832, b: 0.3584906, a: 1}
+    value: {r: 0.49056602, g: 0.3148807, b: 0.09487361, a: 1}
   center:
     overrideState: 0
     value: {x: 0.5, y: 0.5}
   intensity:
     overrideState: 1
-    value: 0.471
+    value: 0.394
   smoothness:
     overrideState: 1
     value: 0.149

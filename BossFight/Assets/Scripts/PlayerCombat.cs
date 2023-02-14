@@ -10,8 +10,14 @@ public class PlayerCombat : MonoBehaviour
 
     PlayerMovement playermovement;
     CombatManager combatManager;
+
+    private AudioSource source;
+    public AudioClip clip;
+
     private void Start()
     {
+        source = GetComponent<AudioSource>();
+        source.clip= clip;
         playermovement = playerGameObject.GetComponent<PlayerMovement>();
         combatManager = GameObject.Find("GameManager").GetComponent<CombatManager>();
     }
@@ -50,6 +56,8 @@ public class PlayerCombat : MonoBehaviour
     {
         if (CheckAnimation() == true && canAttack == true)
         {
+            source.Play();
+            source.volume = 0.2f;
             combatManager.DragonTakeDamage();
         }
     }
