@@ -7,6 +7,14 @@ public class PlayerMovement : MonoBehaviour
     public GameObject musicPlayer;
     AudioManager audioMan;
 
+    [Header("Sounds")]
+    public AudioSource source;
+    public AudioClip clip;
+    public float volume;
+    public float walkingPitch;
+    public float runningPitch;
+
+
     [Header("Animation")]
     [SerializeField] Animator MyAnimator;
 
@@ -42,10 +50,14 @@ public class PlayerMovement : MonoBehaviour
             PlayerAttack();
             Move();
         }
-        
     }
     private void OnTriggerEnter(Collider other)
     {
+        if(Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.D))
+        {
+            source.enabled = true;
+        }else source.enabled = false;
+
        if(other.gameObject.name == musicPlayer.name)
        {
            //Debug.Log(other.name);
@@ -53,6 +65,7 @@ public class PlayerMovement : MonoBehaviour
            other.gameObject.SetActive(false);
        }
     }
+
     private void Move()
     {
         //The idle animation will be true by default
@@ -84,6 +97,7 @@ public class PlayerMovement : MonoBehaviour
             //player rotation with respect to camera's rotation
             desiredRotation = Mathf.Atan2(rotatedMovement.x, rotatedMovement.z) * Mathf.Rad2Deg;
             MyAnimator.SetBool("walk", true);
+            
         }
         if (rotatedMovement.magnitude > 0 && Input.GetKey(KeyCode.LeftShift))
         {

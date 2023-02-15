@@ -1,11 +1,8 @@
 using System.Collections;
-using System.Collections.Generic;
-using Unity.Mathematics;
-using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Animations.Rigging;
 using Cinemachine;
-
+using Random = UnityEngine.Random;
 public class EnemyMovement : MonoBehaviour
 {
     public Transform player;
@@ -16,11 +13,15 @@ public class EnemyMovement : MonoBehaviour
     private bool finishedAttack;
     public GameObject[] trails;
 
-
+    public AudioSource source;
+    public AudioClip []clip;
+    public float volume;
 
 
     private void Start()
     {
+        source.volume = volume;
+        
         trailDeactivate();
     }
     void Update()
@@ -65,11 +66,15 @@ public class EnemyMovement : MonoBehaviour
     {
         trailDeactivate();
         finishedAttack = false;
+        
+        source.clip = clip[Random.Range(0, 1)];
+        source.Play();
         dragonAnim.speed = dragonSlowSpeed;
     }
     public bool BasicAttackFast()
     {
         dragonAnim.speed = dragonFastSpeed;
+        
         return true;
     }
     public void HornAttackSlow()
