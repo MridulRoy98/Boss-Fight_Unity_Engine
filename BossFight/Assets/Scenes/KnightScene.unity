@@ -1909,6 +1909,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 1558875680}
   character: {fileID: 2102075044}
+  dragonAnim: {fileID: 267218877}
   ragDollColliders: []
   ragDollRigidbodies: []
 --- !u!82 &311259851
@@ -4350,7 +4351,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 739466369}
-  m_LocalRotation: {x: -0.1252772, y: -1e-45, z: -0, w: 0.9921218}
+  m_LocalRotation: {x: -0.1252772, y: -5.5023154e-15, z: 2.5763413e-15, w: 0.9921218}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -5687,7 +5688,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 978453948}
-  m_LocalRotation: {x: -0.18826589, y: -0.000000015366503, z: 0.000000007741454, w: 0.9821181}
+  m_LocalRotation: {x: -0.18826589, y: -0.000000015952754, z: 0.0000000080368, w: 0.9821181}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0

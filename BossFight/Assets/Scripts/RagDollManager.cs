@@ -8,6 +8,7 @@ public class RagDollManager : MonoBehaviour
     public GameObject character;
     private CharacterController cc;
     private Animator anim;
+    public Animator dragonAnim;
 
     public Collider[] ragDollColliders;
     public Rigidbody[] ragDollRigidbodies;
@@ -15,6 +16,7 @@ public class RagDollManager : MonoBehaviour
     CombatManager combatMan;
     private void Start()
     {
+        //dragonAnim = GetComponent<Animator>();
         combatMan = GetComponent<CombatManager>();
         cc = player.GetComponent<CharacterController>();
         anim = character.GetComponent<Animator>();
@@ -36,6 +38,9 @@ public class RagDollManager : MonoBehaviour
     }
     public void RagdollOn()
     {
+        dragonAnim.SetBool("isPatrolling", false);
+        dragonAnim.SetBool("isAttacking", false);
+        dragonAnim.SetBool("isChasing", false);
         anim.enabled = false;
         cc.enabled = false;
         foreach (Collider col in ragDollColliders)
