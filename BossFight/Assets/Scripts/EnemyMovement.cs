@@ -5,6 +5,8 @@ using Cinemachine;
 using Random = UnityEngine.Random;
 public class EnemyMovement : MonoBehaviour
 {
+    public CinemachineFreeLook cinemachine;
+
     public Transform player;
     public Animator dragonAnim;
 
@@ -21,7 +23,6 @@ public class EnemyMovement : MonoBehaviour
     private void Start()
     {
         source.volume = volume;
-        
         trailDeactivate();
     }
     void Update()
@@ -30,6 +31,11 @@ public class EnemyMovement : MonoBehaviour
         {
             LookAtPlayer();
         }
+    }
+
+    private void cameraShake()
+    {
+
     }
     void trailActivate()
     {
