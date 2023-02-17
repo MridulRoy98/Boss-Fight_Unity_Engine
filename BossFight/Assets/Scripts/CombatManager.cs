@@ -27,13 +27,16 @@ public class CombatManager : MonoBehaviour
     Behaviour patrolBehaviour;
 
 
-    public ParticleSystem bloodVfx;
+    public ParticleSystem bloodVfx, bloodVfx2, bloodVfx3;
     UI_Manager ui;
 
     bool waiting;
 
     private void Start()
     {
+        bloodVfx.Stop();
+        bloodVfx2.Stop();
+        bloodVfx3.Stop();
         //patrolBehaviour = DragonAnim.GetComponent<Behaviour>();
 
         PlayerBody = GetComponent<GameObject>();
@@ -52,6 +55,26 @@ public class CombatManager : MonoBehaviour
         
     }
 
+    private void bleed()
+    {
+        int bloodNumber = Random.Range(0, 2);
+
+        switch (bloodNumber)
+        {
+            case 0:
+                bloodVfx.Play();
+                Debug.Log(bloodVfx);
+                break;
+            case 1:
+                bloodVfx2.Play();
+                Debug.Log(bloodVfx2);
+                break;
+            case 3:
+                bloodVfx3.Play();
+                Debug.Log(bloodVfx3);
+                break;
+        }
+    }
 
     private void wait(float duration)
     {
@@ -77,7 +100,7 @@ public class CombatManager : MonoBehaviour
         {
             DragonHP -= PlayerDamage;
             ui.UpdateHealthBar(1500, getDragonHP());
-            bloodVfx.Play();
+            bleed();
             setDragonHP(DragonHP);
            // Debug.Log("Dragon HP: " + DragonHP);
 
