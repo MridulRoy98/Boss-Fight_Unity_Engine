@@ -51,7 +51,7 @@ I would like to give credit to the following resources that I used to create thi
 
 - Unity Asset Store
 
-- Brackeys (YouTube tutorial channel)
+- [Brackeys (YouTube tutorial channel)](https://www.youtube.com/@Brackeys)
 
 - OpenGameArt.org
 
