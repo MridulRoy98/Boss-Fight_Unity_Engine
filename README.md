@@ -31,4 +31,4 @@ I would like to give credit to the following resources that I used to create thi
 Unity Technologies
 Unity Asset Store
 Brackeys (YouTube tutorial channel)
-OpenGameArt
+OpenGameArt.org
