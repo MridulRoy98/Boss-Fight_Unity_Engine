@@ -1,0 +1,508 @@
+fileFormatVersion: 2
+guid: 1476e120cbb8c7d4796d6b9bb970873e
+timeCreated: 1483095147
+licenseType: Store
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: body
+    100002: //RootNode
+    100004: character
+    100006: head
+    100008: left_arm
+    100010: left_elbow
+    100012: left_feet
+    100014: left_hand
+    100016: left_knee
+    100018: left_leg
+    100020: left_toe
+    100022: pelvis
+    100024: right_arm
+    100026: right_elbow
+    100028: right_feet
+    100030: right_hand
+    100032: right_knee
+    100034: right_leg
+    100036: right_toe
+    100038: root_joint
+    100040: stomach
+    100042: weapon_locator
+    100044: weapon_locator 1
+    100046: body_controller
+    100048: head_controller
+    100050: left_leg_controller
+    100052: left_leg_poleVector_controller
+    100054: left_leg_poleVector_controller 1
+    100056: left_weapon_controller
+    100058: right_leg_controller
+    100060: right_weapon_controller
+    100062: stomach_controller
+    100064: upperbody_controller
+    100066: body1
+    100068: character2
+    100070: Character_1
+    100072: head1
+    100074: left_arm2
+    100076: left_elbow2
+    100078: left_feet1
+    100080: left_hand2
+    100082: left_knee1
+    100084: left_leg1
+    100086: left_toe2
+    100088: pelvis1
+    100090: right_arm2
+    100092: right_elbow2
+    100094: right_feet1
+    100096: right_hand2
+    100098: right_knee1
+    100100: right_leg1
+    100102: right_toe2
+    100104: root_joint 1
+    100106: stomach1
+    100108: weapon_locator1
+    100110: weapon_locator2
+    400000: body
+    400002: //RootNode
+    400004: character
+    400006: head
+    400008: left_arm
+    400010: left_elbow
+    400012: left_feet
+    400014: left_hand
+    400016: left_knee
+    400018: left_leg
+    400020: left_toe
+    400022: pelvis
+    400024: right_arm
+    400026: right_elbow
+    400028: right_feet
+    400030: right_hand
+    400032: right_knee
+    400034: right_leg
+    400036: right_toe
+    400038: root_joint
+    400040: stomach
+    400042: weapon_locator
+    400044: weapon_locator 1
+    400046: body_controller
+    400048: head_controller
+    400050: left_leg_controller
+    400052: left_leg_poleVector_controller
+    400054: left_leg_poleVector_controller 1
+    400056: left_weapon_controller
+    400058: right_leg_controller
+    400060: right_weapon_controller
+    400062: stomach_controller
+    400064: upperbody_controller
+    400066: body1
+    400068: character2
+    400070: Character_1
+    400072: head1
+    400074: left_arm2
+    400076: left_elbow2
+    400078: left_feet1
+    400080: left_hand2
+    400082: left_knee1
+    400084: left_leg1
+    400086: left_toe2
+    400088: pelvis1
+    400090: right_arm2
+    400092: right_elbow2
+    400094: right_feet1
+    400096: right_hand2
+    400098: right_knee1
+    400100: right_leg1
+    400102: right_toe2
+    400104: root_joint 1
+    400106: stomach1
+    400108: weapon_locator1
+    400110: weapon_locator2
+    4300000: character
+    4300002: character2
+    7400000: tPose_attacker
+    7400002: idle_attacker
+    7400004: character_attack-3-combo_attacker
+    7400006: character_superslash_attacker
+    9500000: //RootNode
+    13700000: character
+    13700002: character2
+  externalObjects: {}
+  materials:
+    importMaterials: 0
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 0
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: tPose_attacker
+      takeName: Take 001
+      firstFrame: 0
+      lastFrame: 1
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: character
+        weight: 1
+      - path: root_joint
+        weight: 1
+      - path: root_joint/pelvis
+        weight: 1
+      - path: root_joint/pelvis/left_leg
+        weight: 1
+      - path: root_joint/pelvis/left_leg/left_knee
+        weight: 1
+      - path: root_joint/pelvis/left_leg/left_knee/left_feet
+        weight: 1
+      - path: root_joint/pelvis/left_leg/left_knee/left_feet/left_toe
+        weight: 1
+      - path: root_joint/pelvis/right_leg
+        weight: 1
+      - path: root_joint/pelvis/right_leg/right_knee
+        weight: 1
+      - path: root_joint/pelvis/right_leg/right_knee/right_feet
+        weight: 1
+      - path: root_joint/pelvis/right_leg/right_knee/right_feet/right_toe
+        weight: 1
+      - path: root_joint/pelvis/stomach
+        weight: 1
+      - path: root_joint/pelvis/stomach/body
+        weight: 1
+      - path: root_joint/pelvis/stomach/body/head
+        weight: 1
+      - path: root_joint/pelvis/stomach/body/left_arm
+        weight: 1
+      - path: root_joint/pelvis/stomach/body/left_arm/left_elbow
+        weight: 1
+      - path: root_joint/pelvis/stomach/body/left_arm/left_elbow/left_hand
+        weight: 1
+      - path: root_joint/pelvis/stomach/body/left_arm/left_elbow/left_hand/weapon_locator
+        weight: 1
+      - path: root_joint/pelvis/stomach/body/right_arm
+        weight: 1
+      - path: root_joint/pelvis/stomach/body/right_arm/right_elbow
+        weight: 1
+      - path: root_joint/pelvis/stomach/body/right_arm/right_elbow/right_hand
+        weight: 1
+      - path: root_joint/pelvis/stomach/body/right_arm/right_elbow/right_hand/weapon_locator
+          1
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: idle_attacker
+      takeName: Take 001
+      firstFrame: 2
+      lastFrame: 90
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: character
+        weight: 1
+      - path: root_joint
+        weight: 1
+      - path: root_joint/pelvis
+        weight: 1
+      - path: root_joint/pelvis/left_leg
+        weight: 1
+      - path: root_joint/pelvis/left_leg/left_knee
+        weight: 1
+      - path: root_joint/pelvis/left_leg/left_knee/left_feet
+        weight: 1
+      - path: root_joint/pelvis/left_leg/left_knee/left_feet/left_toe
+        weight: 1
+      - path: root_joint/pelvis/right_leg
+        weight: 1
+      - path: root_joint/pelvis/right_leg/right_knee
+        weight: 1
+      - path: root_joint/pelvis/right_leg/right_knee/right_feet
+        weight: 1
+      - path: root_joint/pelvis/right_leg/right_knee/right_feet/right_toe
+        weight: 1
+      - path: root_joint/pelvis/stomach
+        weight: 1
+      - path: root_joint/pelvis/stomach/body
+        weight: 1
+      - path: root_joint/pelvis/stomach/body/head
+        weight: 1
+      - path: root_joint/pelvis/stomach/body/left_arm
+        weight: 1
+      - path: root_joint/pelvis/stomach/body/left_arm/left_elbow
+        weight: 1
+      - path: root_joint/pelvis/stomach/body/left_arm/left_elbow/left_hand
+        weight: 1
+      - path: root_joint/pelvis/stomach/body/left_arm/left_elbow/left_hand/weapon_locator
+        weight: 1
+      - path: root_joint/pelvis/stomach/body/right_arm
+        weight: 1
+      - path: root_joint/pelvis/stomach/body/right_arm/right_elbow
+        weight: 1
+      - path: root_joint/pelvis/stomach/body/right_arm/right_elbow/right_hand
+        weight: 1
+      - path: root_joint/pelvis/stomach/body/right_arm/right_elbow/right_hand/weapon_locator
+          1
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: character_attack-3-combo_attacker
+      takeName: Take 001
+      firstFrame: 92
+      lastFrame: 272
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: character
+        weight: 1
+      - path: root_joint
+        weight: 1
+      - path: root_joint/pelvis
+        weight: 1
+      - path: root_joint/pelvis/left_leg
+        weight: 1
+      - path: root_joint/pelvis/left_leg/left_knee
+        weight: 1
+      - path: root_joint/pelvis/left_leg/left_knee/left_feet
+        weight: 1
+      - path: root_joint/pelvis/left_leg/left_knee/left_feet/left_toe
+        weight: 1
+      - path: root_joint/pelvis/right_leg
+        weight: 1
+      - path: root_joint/pelvis/right_leg/right_knee
+        weight: 1
+      - path: root_joint/pelvis/right_leg/right_knee/right_feet
+        weight: 1
+      - path: root_joint/pelvis/right_leg/right_knee/right_feet/right_toe
+        weight: 1
+      - path: root_joint/pelvis/stomach
+        weight: 1
+      - path: root_joint/pelvis/stomach/body
+        weight: 1
+      - path: root_joint/pelvis/stomach/body/head
+        weight: 1
+      - path: root_joint/pelvis/stomach/body/left_arm
+        weight: 1
+      - path: root_joint/pelvis/stomach/body/left_arm/left_elbow
+        weight: 1
+      - path: root_joint/pelvis/stomach/body/left_arm/left_elbow/left_hand
+        weight: 1
+      - path: root_joint/pelvis/stomach/body/left_arm/left_elbow/left_hand/weapon_locator
+        weight: 1
+      - path: root_joint/pelvis/stomach/body/right_arm
+        weight: 1
+      - path: root_joint/pelvis/stomach/body/right_arm/right_elbow
+        weight: 1
+      - path: root_joint/pelvis/stomach/body/right_arm/right_elbow/right_hand
+        weight: 1
+      - path: root_joint/pelvis/stomach/body/right_arm/right_elbow/right_hand/weapon_locator
+          1
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: character_superslash_attacker
+      takeName: Take 001
+      firstFrame: 293
+      lastFrame: 474
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: character
+        weight: 1
+      - path: root_joint
+        weight: 1
+      - path: root_joint/pelvis
+        weight: 1
+      - path: root_joint/pelvis/left_leg
+        weight: 1
+      - path: root_joint/pelvis/left_leg/left_knee
+        weight: 1
+      - path: root_joint/pelvis/left_leg/left_knee/left_feet
+        weight: 1
+      - path: root_joint/pelvis/left_leg/left_knee/left_feet/left_toe
+        weight: 1
+      - path: root_joint/pelvis/right_leg
+        weight: 1
+      - path: root_joint/pelvis/right_leg/right_knee
+        weight: 1
+      - path: root_joint/pelvis/right_leg/right_knee/right_feet
+        weight: 1
+      - path: root_joint/pelvis/right_leg/right_knee/right_feet/right_toe
+        weight: 1
+      - path: root_joint/pelvis/stomach
+        weight: 1
+      - path: root_joint/pelvis/stomach/body
+        weight: 1
+      - path: root_joint/pelvis/stomach/body/head
+        weight: 1
+      - path: root_joint/pelvis/stomach/body/left_arm
+        weight: 1
+      - path: root_joint/pelvis/stomach/body/left_arm/left_elbow
+        weight: 1
+      - path: root_joint/pelvis/stomach/body/left_arm/left_elbow/left_hand
+        weight: 1
+      - path: root_joint/pelvis/stomach/body/left_arm/left_elbow/left_hand/weapon_locator
+        weight: 1
+      - path: root_joint/pelvis/stomach/body/right_arm
+        weight: 1
+      - path: root_joint/pelvis/stomach/body/right_arm/right_elbow
+        weight: 1
+      - path: root_joint/pelvis/stomach/body/right_arm/right_elbow/right_hand
+        weight: 1
+      - path: root_joint/pelvis/stomach/body/right_arm/right_elbow/right_hand/weapon_locator
+          1
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 0
+    importBlendShapes: 1
+    importCameras: 0
+    importLights: 0
+    swapUVChannels: 0
+    generateSecondaryUV: 1
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

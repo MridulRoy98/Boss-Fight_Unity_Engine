@@ -27,6 +27,7 @@ public class CombatManager : MonoBehaviour
     Behaviour patrolBehaviour;
 
 
+    public ParticleSystem bloodVfx;
     UI_Manager ui;
 
     bool waiting;
@@ -76,6 +77,7 @@ public class CombatManager : MonoBehaviour
         {
             DragonHP -= PlayerDamage;
             ui.UpdateHealthBar(1500, getDragonHP());
+            bloodVfx.Play();
             setDragonHP(DragonHP);
            // Debug.Log("Dragon HP: " + DragonHP);
 
