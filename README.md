@@ -9,6 +9,7 @@ This is a game I created in Unity where I learned to use-
 - Unity's built-in character controller component
 - Behaviour state machines and Navmesh for Enemy AI 
 - Animation events to add anticipation to the enemy's attacks, making it a challenging opponent for the player
+- Animation masking
 - Using animation events to have the player take damage at a certain point of the animation
 - Adding Ragdoll to the player and how to enable and disable it
 - Learned how to use audio sources and how to manipulate it
