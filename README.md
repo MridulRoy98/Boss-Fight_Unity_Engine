@@ -41,7 +41,7 @@ To play the game, you will need to download the source code from the Github repo
 - Once the import is complete, you can click on the "Play" button in the Unity editor to run the game.
 
 
-Note: Make sure you have Unity installed on your system before following these steps. Also, keep in mind that you may need to configure some settings, such as the 9.) graphics quality or resolution, before playing the game.
+Note: Make sure you have Unity installed on your system before following these steps. Also, keep in mind that you may need to configure some settings, such as the graphics quality or resolution, before playing the game.
 
 # Credits
 
