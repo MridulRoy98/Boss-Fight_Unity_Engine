@@ -39,7 +39,7 @@ To play the game, you will need to download the source code from the Github repo
 
 - Open Unity editor and select "Open Project"
 
-- Navigate to the local folder where you extracted the game files, Go to Assets->Scenes, and select the main Unity project file (ends with .unity)
+- Navigate to the local folder where you extracted the game files, Go to Assets->Scenes, and select the main Unity project file   (ends with .unity)
 
 - Wait for Unity to import all the assets and scenes
 
