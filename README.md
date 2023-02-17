@@ -47,11 +47,11 @@ Note: Make sure you have Unity installed on your system before following these s
 
 I would like to give credit to the following resources that I used to create this game:
 
-- Unity Technologies
+- [Unity Technologies](https://unity.com/)
 
-- Unity Asset Store
+- [Unity Asset Store](https://assetstore.unity.com/) 
 
 - [Brackeys (YouTube tutorial channel)](https://www.youtube.com/@Brackeys)
 
-- OpenGameArt.org
+- [OpenGameArt.org](https://opengameart.org/)
 
