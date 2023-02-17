@@ -13,10 +13,8 @@ This is a game I created in Unity where I learned to use-
 - Using animation events to have the player take damage at a certain point of the animation
 - Adding Ragdoll to the player and how to enable and disable it
 - Learned how to use audio sources and how to manipulate it
-- VFX to visualize attack impact
-- Learned to implement UI and update at runtime
+- VFX and UI that updates at runtime
 - Coroutines and Ienumerator
-- Post-preocessing
 
 # Gameplay
 
