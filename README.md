@@ -10,9 +10,9 @@ This is a game I created in Unity where I learned to use-
 - Behaviour state machines and Navmesh for Enemy AI 
 - Animation events to add anticipation to the enemy's attacks, making it a challenging opponent for the player
 - Animation masking
-- Using animation events to have the player take damage at a certain point of the animation
-- Adding Ragdoll to the player and how to enable and disable it
-- Learned how to use audio sources and how to manipulate it
+- Animation events to have the player take damage at a certain point of the animation
+- Ragdolls and how to enable and disable it
+- Audio sources and how to manipulate it
 - VFX and UI that updates at runtime
 - Coroutines and Ienumerator
 
