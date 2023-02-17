@@ -20,6 +20,7 @@ public class EnemyMovement : MonoBehaviour
     public float volume;
 
 
+
     private void Start()
     {
         source.volume = volume;
@@ -33,10 +34,7 @@ public class EnemyMovement : MonoBehaviour
         }
     }
 
-    private void cameraShake()
-    {
 
-    }
     void trailActivate()
     {
         foreach (GameObject trail in trails)

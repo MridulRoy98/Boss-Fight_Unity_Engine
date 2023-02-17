@@ -29,6 +29,7 @@ public class CombatManager : MonoBehaviour
 
     UI_Manager ui;
 
+    bool waiting;
 
     private void Start()
     {
@@ -49,6 +50,25 @@ public class CombatManager : MonoBehaviour
         PlayerRagDoll = GetComponent<RagDollManager>();
         
     }
+
+
+    private void wait(float duration)
+    {
+        if (waiting)
+        {
+            return;
+        }
+        Time.timeScale = 0f;
+        StartCoroutine(HitStop(duration));
+    }
+    IEnumerator HitStop(float duration)
+    {
+        waiting = true;
+        yield return new WaitForSecondsRealtime(duration);
+        Time.timeScale = 1f;
+        waiting= false;
+    }
+
 
     public void DragonTakeDamage()
     {
@@ -88,6 +108,7 @@ public class CombatManager : MonoBehaviour
         if (getHealth() > 0f)
         {
             PlayerHP -= 95;
+            wait(0.08f);
             //ui.ShowBloodSplatter();
             //Debug.Log("PlayerHP: " + PlayerHP);
             setHealth(PlayerHP);
