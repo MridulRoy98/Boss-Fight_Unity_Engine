@@ -4,8 +4,6 @@
 ![de66c742-4172-4948-9ace-cd6893a6d72d](https://user-images.githubusercontent.com/69635889/219737926-e8caa21d-0005-4bab-8f87-2dff2ddf0b59.jpeg)
 
 
-https://user-images.githubusercontent.com/69635889/219967714-196972ab-c041-4750-8f0a-aa349cec44f1.mp4
-
 
 # Description
 
